@@ -14,7 +14,6 @@ log4j.rootLogger=loggly
 # Loggly Logger
 log4j.appender.loggly=com.twentytwelve.log4j2loggly.LogglyAppender
 log4j.appender.loggly.threadCount=5
-log4j.appender.loggly.httpKeepAlive=false
 log4j.appender.loggly.queueSize=5000
 log4j.appender.loggly.httpsProxyHost=172.22.100.15
 log4j.appender.loggly.httpsProxyPort=8080
