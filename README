@@ -1,0 +1,4 @@
+Log4j log appender implementation that connects to loggly. It doesn't yet work properly as multiple and concurrent calls
+to loggly often block and fail with "SSLHandshakeException: Remote host closed connection during handshake".
+
+Working on it...
