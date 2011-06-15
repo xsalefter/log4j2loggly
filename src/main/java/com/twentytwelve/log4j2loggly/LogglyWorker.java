@@ -24,13 +24,13 @@ public class LogglyWorker implements Runnable {
         this.logglyKey = logglyKey;
         this.work = work;
 
-		Security.addProvider(new com.sun.net.ssl.internal.ssl.Provider());
+        Security.addProvider(new com.sun.net.ssl.internal.ssl.Provider());
 
         if (System.getProperty("java.protocol.handler.pkgs") == null) {
-		    System.getProperties().setProperty("java.protocol.handler.pkgs", "com.sun.net.ssl.internal.www.protocol");
-		} else {
-		    System.getProperties().setProperty("java.protocol.handler.pkgs", "com.sun.net.ssl.internal.www.protocol|".concat(System.getProperty("java.protocol.handler.pkgs")));
-		}
+            System.getProperties().setProperty("java.protocol.handler.pkgs", "com.sun.net.ssl.internal.www.protocol");
+        } else {
+            System.getProperties().setProperty("java.protocol.handler.pkgs", "com.sun.net.ssl.internal.www.protocol|".concat(System.getProperty("java.protocol.handler.pkgs")));
+        }
     }
 
     @Override
