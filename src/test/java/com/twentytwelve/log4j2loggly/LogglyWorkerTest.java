@@ -13,7 +13,7 @@ import java.util.concurrent.BlockingQueue;
  * Date: 6/13/11
  * Time: 1:47 AM
  */
-//@Ignore
+@Ignore
 public class LogglyWorkerTest extends TestCase {
 
     public static final String MY_KEY = "your-key";

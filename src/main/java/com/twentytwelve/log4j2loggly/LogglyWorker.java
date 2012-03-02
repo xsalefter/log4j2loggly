@@ -19,7 +19,8 @@ public class LogglyWorker implements Runnable {
     private volatile boolean working = false;
     private BlockingQueue<String> work;
 
-    public LogglyWorker(BlockingQueue<String> work, String logglyUrl, String logglyKey) {
+    @SuppressWarnings("restriction")
+	public LogglyWorker(BlockingQueue<String> work, String logglyUrl, String logglyKey) {
         this.logglyUrl = logglyUrl;
         this.logglyKey = logglyKey;
         this.work = work;
